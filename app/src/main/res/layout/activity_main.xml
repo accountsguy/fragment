@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.accountsguy.fragments.MainActivity"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:inputType="number"
+        android:id="@+id/number"
+         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="#C8CCD2"
+        android:onClick="show"/>
+
+    <fragment
+        android:id="@+id/simpleaddition"
+        android:name="net.accountsguy.fragments.simpleaddition"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></fragment>
+</LinearLayout>
